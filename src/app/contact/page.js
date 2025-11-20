@@ -8,17 +8,28 @@ export default function ContactPage() {
     <>
 
       {/* HERO SECTION */}
-      <section className="contact-hero">
-        <div className="hero-overlay"></div>
+{/* HERO SECTION */}
+<section className="contact-hero">
 
-        <div className="hero-content">
-          <h1>Get in Touch</h1>
-          <p>
-            Connect with VIDA for high-quality medical & hospital equipment solutions.
-          </p>
-          <a href="#contact" className="hero-btn">Contact Now</a>
-        </div>
-      </section>
+  <div className="contact-wrapper">
+
+    {/* LEFT SIDE CONTENT */}
+    <div className="hero-left">
+      <h1>Get in Touch With Us</h1>
+      <p>Delivering trusted medical & hospital equipment across India with excellence.</p>
+      <a href="#contact" className="hero-btn">Contact Now</a>
+    </div>
+
+    {/* RIGHT SIDE IMAGE */}
+    <div className="hero-right">
+      <img src="/icons/remove_01.png" alt="Contact Vida" className="hero-img" />
+    </div>
+
+  </div>
+
+</section>
+
+
 
       {/* MAIN CONTACT SECTION */}
       <section id="contact" className="contact-section">
@@ -45,7 +56,7 @@ export default function ContactPage() {
                   Opp. Sapna Hotel, Gokhalenagar Road,<br />
                   Pune 411016
                 </p>
-              </div>
+              </div>           
             </div>
 
             <div className="info-block">

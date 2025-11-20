@@ -5,6 +5,8 @@ import styles from "./page.module.css";
 import Loader from "./components/Loader";
 import HomeAbout from "./components/home_about";
 import VidaProductsAccordion from "./components/VidaProductsAccordion";
+import CertificateSection from "./components/Certificate";
+
 
 export default function Home() {
   return (
@@ -77,6 +79,9 @@ export default function Home() {
 
         {/* VIDA PRODUCTS ACCORDION */}
         <VidaProductsAccordion />
+
+        <CertificateSection />
+
 
       </main>
     </>

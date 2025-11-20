@@ -29,14 +29,14 @@ export default function VidaProductsAccordion() {
 • Inter Locking Pass Box
 • Catheter Wash Station
 `,
-      image: "/images/product_01.jpeg",
+      image: "/icons/remove_01.png",
     },
     {
       title: "Research & Development",
       content: `
 Our continuous R&D ensures innovative, safe, durable and world-class hospital equipment solutions.
 `,
-      image: "/images/product_01.jpeg",
+      image: "/icons/remove_0333.png",
     },
     {
       title: "Services",
@@ -52,7 +52,7 @@ Our continuous R&D ensures innovative, safe, durable and world-class hospital eq
       content: `
 Led by experienced leaders, VIDA ensures superior product quality and global standards.
 `,
-      image: "/images/product_01.jpeg",
+      image: "/icons/remove_0022.png",
     },
   ];
 

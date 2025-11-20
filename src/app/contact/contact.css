@@ -1,46 +1,87 @@
-/* ================= HERO SECTION ================= */
+/* ================= CONTACT HERO SECTION ================= */
 
 .contact-hero {
   position: relative;
-  height: 380px;
-  background: url("/images/contact_hero.jpg") center/cover no-repeat;
+  background: #0a4c92;
+  padding: 70px 0;
+  color: white;
+}
+
+.contact-wrapper {
+  max-width: 1300px;
+  margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  gap: 40px;
 }
 
-.hero-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(10, 76, 146, 0.50);
-  backdrop-filter: blur(2px);
+/* LEFT SIDE */
+.hero-left {
+  flex: 1;
 }
 
-.hero-content {
-  position: relative;
-  text-align: center;
-  color: #ffffff;
-  z-index: 2;
-}
-
-.hero-content h1 {
-  font-size: 48px;
+.hero-left h1 {
+  font-size: 50px;
   font-weight: 700;
+  line-height: 1.2;
 }
 
-.hero-content p {
-  font-size: 20px;
-  margin: 10px 0 25px;
+.hero-left p {
+  font-size: 18px;
+  margin: 15px 0 25px;
+  opacity: 0.9;
 }
 
 .hero-btn {
   background: #ffffff;
   color: #0a4c92;
-  padding: 12px 28px;
+  padding: 12px 30px;
   border-radius: 10px;
   font-weight: 600;
   text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #e7362b;
+  color: white;
+}
+
+/* RIGHT SIDE IMAGE */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 50%;
+  max-width: 520px;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .contact-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-right {
+    margin-top: 30px;
+  }
+
+  .hero-img {
+    max-width: 90%;
+  }
+
+  .hero-left h1 {
+    font-size: 38px;
+  }
 }
 
 

@@ -1,0 +1,147 @@
+/* ==========================
+   CERTIFICATE SECTION
+========================== */
+.certificate-section {
+  padding: 80px 6%;
+  background: #f5f8ff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.certificate-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.certificate-header .tag {
+  color: #7c8ad1;
+  font-size: 15px;
+}
+
+.certificate-header h2 {
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.certificate-header h2 span {
+  color: #1a4db3;
+}
+
+.certificate-header .sub-text {
+  max-width: 650px;
+  margin: 12px auto;
+  color: #444;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* ==========================
+   SLIDER CARD
+========================== */
+.certificate-card-slider {
+  background: #fff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(26, 77, 179, 0.12);
+  transition: 0.3s ease;
+  text-align: center;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.certificate-card-slider:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(26, 77, 179, 0.18);
+}
+
+.certificate-card-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Swiper spacing */
+.certificate-slider {
+  padding-bottom: 20px;
+}
+
+/* ==========================
+   MODAL POPUP
+========================== */
+
+.certificate-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modal box */
+.modal-content {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  animation: zoomIn 0.25s ease;
+  max-width: 90%;
+  max-height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: #1a4db3;
+  color: #fff;
+  border: none;
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.85); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+@media (max-width: 600px) {
+  .certificate-header h2 {
+    font-size: 26px;
+  }
+
+  .modal-content {
+    padding: 10px;
+  }
+}

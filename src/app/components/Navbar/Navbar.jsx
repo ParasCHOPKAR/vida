@@ -33,28 +33,27 @@ export default function Navbar() {
 
             {/* PRODUCTS DROPDOWN */}
             <li className="dropdown">
-              <span>Products ▾</span>
+              <Link href="/products" className="dropdown-title">
+                Products ▾
+              </Link>
+
               <ul className="dropdown-menu">
-                <li><Link href="/products/autoclave">Autoclave Horizontal / Vertical</Link></li>
-                <li><Link href="/products/cssd">All CSSD Equipments</Link></li>
-                <li><Link href="/products/cssd-furniture">CSSD Furniture</Link></li>
-                <li><Link href="/products/bedpan">Automatic Bed Pan Washer</Link></li>
-                <li><Link href="/products/sd-dd">S/D DD Instrument & Catheter Dryer</Link></li>
-                <li><Link href="/products/scrub-unit">Scrub Units</Link></li>
-                <li><Link href="/products/endoscopy">Endoscopy Dryer / Cabinet</Link></li>
-                <li><Link href="/products/wash-sinks">Baby Wash Sink</Link></li>
-                <li><Link href="/products/pigeon-rack">Pigeon Rack</Link></li>
-                <li><Link href="/products/swab-holder">Swab Count Holder</Link></li>
-                <li><Link href="/products/apron-stand">Lead Apron Stand</Link></li>
-                <li><Link href="/products/utility-sink">Dirty Utility Sink</Link></li>
-                <li><Link href="/products/pass-box">Interlocking Pass Box</Link></li>
-                <li><Link href="/products/catheter-wash">Catheter Wash Station</Link></li>
+                <li><Link href="/products/autoclave">C.S.S.D. EQUIPMENTS</Link></li>
+                <li><Link href="/products/cssd">Automatic Bed Pan Washer</Link></li>
+                <li><Link href="/products/cssd-furniture">Horizontal Autoclave</Link></li>
+                <li><Link href="/products/bedpan">E.T.O. Sterilizer</Link></li>
+                <li><Link href="/products/sd-dd">Manual Bed Pan Washer</Link></li>
+                <li><Link href="/products/scrub-unit">C.S.S.D. PROJECT</Link></li>
+
+
               </ul>
             </li>
 
             {/* SERVICES DROPDOWN */}
             <li className="dropdown">
-              <span>Services ▾</span>
+              <Link href="/services" className="dropdown-title">
+                Services ▾
+              </Link>
               <ul className="dropdown-menu">
                 <li><Link href="/services/workshops">Equipment Maintenance Workshops</Link></li>
                 <li><Link href="/services/amc">AMC / CMC</Link></li>
@@ -75,7 +74,6 @@ export default function Navbar() {
 
       {/* SIDEBAR */}
       <aside className={`sidebar ${open ? "open" : ""}`}>
-
         <div className="sidebar-top">
           <button className="close-sidebar" onClick={closeSidebar}>✕</button>
         </div>
@@ -115,7 +113,7 @@ export default function Navbar() {
             </button>
 
             <ul className={`mobile-dropdown ${servOpen ? "show" : ""}`}>
-              <li><Link href="/services/workshops" onClick={closeSidebar}>Equipment Workshops</Link></li>
+              <li><Link href="/services/workshops" onClick={closeSidebar}>Equipment Maintenance Workshops</Link></li>
               <li><Link href="/services/amc" onClick={closeSidebar}>AMC / CMC</Link></li>
               <li><Link href="/services/training" onClick={closeSidebar}>Healthcare Training</Link></li>
             </ul>

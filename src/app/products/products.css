@@ -1,0 +1,306 @@
+/* =========================================
+   GLOBAL PAGE STYLE
+========================================= */
+.products-page {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #1a4db3;
+}
+
+
+/* =========================================
+   BODY LAYOUT
+========================================= */
+.prod-layout {
+  display: flex;
+  gap: 40px;
+  padding: 0 40px 40px;
+}
+
+
+/* =========================================
+   LEFT SIDEBAR
+========================================= */
+.prod-list {
+  width: 28%;
+  background: #f7faff;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #d3e2ff;
+  box-shadow: 0 4px 12px rgba(0, 40, 110, 0.06);
+}
+
+.prod-list h2 {
+  font-size: 20px;
+  margin-bottom: 18px;
+  color: #0d2c5a;
+  font-weight: 700;
+}
+
+.prod-item {
+  width: 100%;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 50px;
+  border: 1px solid #e0e8f9;
+  background: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.prod-item:hover,
+.prod-item.active {
+  background: #1a4db3;
+  color: #fff;
+  border-color: #1a4db3;
+}
+
+
+/* =========================================
+   RIGHT DETAILS
+========================================= */
+.prod-details {
+  width: 72%;
+  padding: 25px;
+  border-radius: 14px;
+  background: #f9fbff;
+  border: 1px solid #d0dfff;
+  box-shadow: 0 4px 15px rgba(0, 40, 110, 0.06);
+}
+
+.prod-details-main {
+  display: flex;
+  gap: 25px;
+}
+
+.prod-text h2 {
+  font-size: 26px;
+  color: #0d2c5a;
+  margin-bottom: 12px;
+}
+
+.prod-intro {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+
+/* =========================================
+   LIST SECTIONS
+========================================= */
+.prod-section h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #1a4db3;
+  font-weight: 600;
+}
+
+.prod-section li {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+
+/* =========================================
+   IMAGE AREA
+========================================= */
+.prod-images {
+  flex: 1;
+}
+
+.details-img.main {
+  width: 100%;
+  height: 320px;
+  object-fit: contain;
+  background: white;
+  padding: 10px;
+  border-radius: 14px;
+  border: 1px solid #d3e2ff;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow: 0 4px 10px rgba(0, 40, 110, 0.07);
+}
+
+.details-img.main:hover {
+  transform: scale(1.02);
+}
+
+.thumb-row {
+  display: flex;
+  margin-top: 12px;
+  gap: 10px;
+}
+
+.thumb-img {
+  flex: 1;
+  height: 90px;
+  object-fit: contain;
+  background: white;
+  padding: 8px;
+  border-radius: 10px;
+  border: 1px solid #d3e2ff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.thumb-img:hover {
+  transform: scale(1.05);
+}
+
+
+/* =========================================
+   IMAGE MODAL — FIXED & IMPROVED
+========================================= */
+/* =========================================
+   IMAGE MODAL — FIXED SIZE & CENTERED
+========================================= */
+.img-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5000;
+  padding: 20px;
+}
+
+/* FIXED SIZE CONTAINER for ALL IMAGES */
+.img-modal-content {
+  position: relative;
+  width: 520px;     /* Fixed width */
+  height: 420px;    /* Fixed height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: #fff;
+  padding: 8px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(255,255,255,0.18);
+}
+
+/* Close Button */
+.img-close {
+  position: absolute;
+  top: -50px;
+  right: 10px;
+  font-size: 32px;
+  color: #fff;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.img-close:hover {
+  transform: scale(1.2);
+  color: #ff4444;
+}
+
+/* =========================================
+   HERO SECTION — PROFESSIONAL MEDICAL DESIGN
+========================================= */
+.hero {
+  height: 380px;
+  width: 100%;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #0a2a5e, #1a4db3);
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(45%) blur(1px);
+  opacity: 0.6;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1));
+}
+
+/* Floating Decorative Shapes */
+.hero-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.25;
+  animation: float 7s ease-in-out infinite;
+}
+
+.shape1 {
+  width: 200px;
+  height: 200px;
+  background: #00a6ff;
+  top: -30px;
+  left: -30px;
+}
+
+.shape2 {
+  width: 240px;
+  height: 240px;
+  background: #004ce0;
+  bottom: -40px;
+  right: -40px;
+  animation-delay: 1.5s;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  padding-left: 50px;
+}
+
+.hero-content h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: white;
+}
+
+.hero-content p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #e6e6e6;
+}
+
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-18px); }
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+@media(max-width: 992px) {
+  .prod-layout { flex-direction: column; }
+  .prod-list, .prod-details { width: 100%; }
+  .prod-details-main { flex-direction: column; }
+}
+
+@media(max-width: 600px) {
+  .details-img.main { height: 240px; }
+  .thumb-img { height: 70px; }
+  .hero-content { padding-left: 20px; }
+  .hero-content h1 { font-size: 30px; }
+}
